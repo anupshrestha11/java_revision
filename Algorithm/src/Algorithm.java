@@ -1,4 +1,5 @@
 import Sort.BubbleSort.BubbleSort;
+import Sort.MergeSort.MergeSort;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -28,6 +29,14 @@ public class Algorithm {
         //* BubbleSort
         BubbleSort bubbleSort = new BubbleSort(arr);
         System.out.println("Bubble Sort Result : " + Arrays.toString(bubbleSort.run()));
+        //* End of BubbleSort
+
+        arr = generateArray(10);
+        System.out.println("Orginal Array : " + Arrays.toString(arr));
+
+        //* MergeSort
+        MergeSort mergeSort = new MergeSort(arr);
+        System.out.println("Merge Sort Result : " + Arrays.toString(mergeSort.run()));
         //* End of BubbleSort
 
 
