@@ -1,6 +1,8 @@
-package Sort;
+package Sort.BubbleSort;
 
-public class BubbleSort implements Sort {
+import Sort.Sort;
+
+public class BubbleSort extends Sort {
 
     //* input array
     private int[] input;
@@ -30,7 +32,6 @@ public class BubbleSort implements Sort {
     }
 
     //* Overriding method of interface class Sort with params
-    @Override
     public void sort(int[] input) {
         this.input = input;
         this.sort();
@@ -51,7 +52,6 @@ public class BubbleSort implements Sort {
     }
 
     //* Overriding method of interface class Sort with params
-    @Override
     public int[] run(int[] input) {
         this.input = input;
         return this.run();

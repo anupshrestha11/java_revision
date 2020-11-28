@@ -1,6 +1,5 @@
-import Sort.BubbleSort;
+import Sort.BubbleSort.BubbleSort;
 
-import javax.swing.*;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -24,14 +23,14 @@ public class Algorithm {
     public static void main(String[] args) {
 
         int[] arr = generateArray(10);
-        int[] result;
-
         System.out.println("Orginal Array : " + Arrays.toString(arr));
 
         //* BubbleSort
-        BubbleSort sort = new BubbleSort(arr);
-        System.out.println("Bubble Sort Result : " + Arrays.toString(sort.run()));
+        BubbleSort bubbleSort = new BubbleSort(arr);
+        System.out.println("Bubble Sort Result : " + Arrays.toString(bubbleSort.run()));
         //* End of BubbleSort
+
+
 
     }
 }

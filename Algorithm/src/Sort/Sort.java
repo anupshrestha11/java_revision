@@ -1,11 +1,6 @@
 package Sort;
 
-public interface Sort {
-    public void sort();
-
-    public void sort(int[] input);
-
-    public int[] run();
-
-    public int[] run(int[] input);
+abstract public class Sort {
+    abstract public void sort();
+    abstract public int[] run();
 }
