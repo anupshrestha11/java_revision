@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HealthyBurger extends Hamburger {
-    private List<String> healthyExtraName = new ArrayList<>();
-    private List<Double> healthyExtraPrice = new ArrayList<>();
+    private final List<String> healthyExtraName = new ArrayList<>();
+    private final List<Double> healthyExtraPrice = new ArrayList<>();
 
-    public HealthyBurger( String meat, double price){
+    public HealthyBurger(String meat, double price) {
         super("Healthy", meat, price, "Brown rye");
     }
 
-    public void addHealthAddition(String name, double price){
+    public void addHealthAddition(String name, double price) {
         this.healthyExtraName.add(name);
         this.healthyExtraPrice.add(price);
     }

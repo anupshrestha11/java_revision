@@ -8,8 +8,8 @@ public class Hamburger {
     private final double price;
     private final String breadRollType;
 
-    private List<String> additionalName = new ArrayList<>();
-    private List<Double> additionalPrice = new ArrayList<>();
+    private final List<String> additionalName = new ArrayList<>();
+    private final List<Double> additionalPrice = new ArrayList<>();
 
 
     public Hamburger(String name, String meat, double price, String breadRollType) {
